@@ -51,10 +51,13 @@
 }
 
 .btn{
-     &:disabled,
-     &[disabled],
-     &.disabled{
+    &:disabled,
+    &[disabled],
+    &.disabled{
         @include opacity(.5);
+    }
+    &:active {
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.3) inset;
     }
 }
 .btn-round{
